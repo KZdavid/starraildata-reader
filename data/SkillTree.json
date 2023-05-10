@@ -1,0 +1,1510 @@
+{
+    "1001": [
+        {
+            "key": "IceAddedRatio",
+            "value": 0.03199999938791992,
+            "level": 1
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 2
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 3
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 4
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 5
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 6
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.06399999877583984,
+            "level": 75
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0999999985238072,
+            "level": 80
+        }
+    ],
+    "1002": [
+        {
+            "key": "WindAddedRatio",
+            "value": 0.03199999938791992,
+            "level": 1
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "WindAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 3
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 3
+        },
+        {
+            "key": "WindAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 4
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "WindAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 5
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 6
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "WindAddedRatio",
+            "value": 0.06399999877583984,
+            "level": 80
+        }
+    ],
+    "1003": [
+        {
+            "key": "FireAddedRatio",
+            "value": 0.03199999938791992,
+            "level": 1
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "FireAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 3
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "FireAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 4
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "FireAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 5
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.059999999114284316,
+            "stage": 6
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "FireAddedRatio",
+            "value": 0.06399999877583984,
+            "level": 80
+        }
+    ],
+    "1004": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "ImaginaryAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "ImaginaryAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.059999999114284316,
+            "stage": 6
+        },
+        {
+            "key": "ImaginaryAddedRatio",
+            "value": 0.06399999877583984,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1005": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "BreakDamageAddedRatioBase",
+            "value": 0.05299999900807024,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "BreakDamageAddedRatioBase",
+            "value": 0.07999999881904576,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 6
+        },
+        {
+            "key": "BreakDamageAddedRatioBase",
+            "value": 0.10699999793152935,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1006": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "StatusProbabilityBase",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "QuantumAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "StatusProbabilityBase",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "QuantumAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 6
+        },
+        {
+            "key": "StatusProbabilityBase",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1008": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 6
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1009": [
+        {
+            "key": "FireAddedRatio",
+            "value": 0.03199999938791992,
+            "level": 1
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 2
+        },
+        {
+            "key": "FireAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 3
+        },
+        {
+            "key": "CriticalChanceBase",
+            "value": 0.0269999991124836,
+            "stage": 3
+        },
+        {
+            "key": "FireAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 4
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 5
+        },
+        {
+            "key": "FireAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 5
+        },
+        {
+            "key": "CriticalChanceBase",
+            "value": 0.03999999940952288,
+            "stage": 6
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0999999985238072,
+            "level": 75
+        },
+        {
+            "key": "FireAddedRatio",
+            "value": 0.06399999877583984,
+            "level": 80
+        }
+    ],
+    "1013": [
+        {
+            "key": "IceAddedRatio",
+            "value": 0.03199999938791992,
+            "level": 1
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 2
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 3
+        },
+        {
+            "key": "CriticalChanceBase",
+            "value": 0.0269999991124836,
+            "stage": 3
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 4
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 5
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 5
+        },
+        {
+            "key": "CriticalChanceBase",
+            "value": 0.03999999940952288,
+            "stage": 6
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0999999985238072,
+            "level": 75
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.06399999877583984,
+            "level": 80
+        }
+    ],
+    "1101": [
+        {
+            "key": "WindAddedRatio",
+            "value": 0.03199999938791992,
+            "level": 1
+        },
+        {
+            "key": "CriticalDamageBase",
+            "value": 0.05299999900807024,
+            "stage": 2
+        },
+        {
+            "key": "WindAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 3
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "WindAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 4
+        },
+        {
+            "key": "CriticalDamageBase",
+            "value": 0.07999999881904576,
+            "stage": 5
+        },
+        {
+            "key": "WindAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 5
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.059999999114284316,
+            "stage": 6
+        },
+        {
+            "key": "CriticalDamageBase",
+            "value": 0.10699999793152935,
+            "level": 75
+        },
+        {
+            "key": "WindAddedRatio",
+            "value": 0.06399999877583984,
+            "level": 80
+        }
+    ],
+    "1102": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "CriticalDamageBase",
+            "value": 0.05299999900807024,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "CriticalDamageBase",
+            "value": 0.07999999881904576,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 6
+        },
+        {
+            "key": "CriticalDamageBase",
+            "value": 0.10699999793152935,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1103": [
+        {
+            "key": "CriticalChanceBase",
+            "value": 0.0269999991124836,
+            "level": 1
+        },
+        {
+            "key": "StatusProbabilityBase",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "CriticalChanceBase",
+            "value": 0.0269999991124836,
+            "stage": 3
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "CriticalChanceBase",
+            "value": 0.03999999940952288,
+            "stage": 4
+        },
+        {
+            "key": "StatusProbabilityBase",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "CriticalChanceBase",
+            "value": 0.03999999940952288,
+            "stage": 5
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.059999999114284316,
+            "stage": 6
+        },
+        {
+            "key": "StatusProbabilityBase",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "CriticalChanceBase",
+            "value": 0.05299999900807024,
+            "level": 80
+        }
+    ],
+    "1104": [
+        {
+            "key": "IceAddedRatio",
+            "value": 0.03199999938791992,
+            "level": 1
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 3
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 3
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 4
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 5
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 6
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.06399999877583984,
+            "level": 80
+        }
+    ],
+    "1105": [
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 3
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 6
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1106": [
+        {
+            "key": "IceAddedRatio",
+            "value": 0.03199999938791992,
+            "level": 1
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 3
+        },
+        {
+            "key": "StatusProbabilityBase",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 4
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 5
+        },
+        {
+            "key": "StatusProbabilityBase",
+            "value": 0.059999999114284316,
+            "stage": 6
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.06399999877583984,
+            "level": 80
+        }
+    ],
+    "1107": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "PhysicalAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "PhysicalAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 6
+        },
+        {
+            "key": "PhysicalAddedRatio",
+            "value": 0.06399999877583984,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1108": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "StatusProbabilityBase",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "StatusProbabilityBase",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.059999999114284316,
+            "stage": 6
+        },
+        {
+            "key": "StatusProbabilityBase",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1109": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "CriticalDamageBase",
+            "value": 0.05299999900807024,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "CriticalDamageBase",
+            "value": 0.07999999881904576,
+            "stage": 6
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1201": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "QuantumAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "QuantumAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 6
+        },
+        {
+            "key": "QuantumAddedRatio",
+            "value": 0.06399999877583984,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1202": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "ThunderAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "ThunderAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 6
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0999999985238072,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1203": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 6
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1204": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "CriticalChanceBase",
+            "value": 0.0269999991124836,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "CriticalChanceBase",
+            "value": 0.03999999940952288,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 6
+        },
+        {
+            "key": "CriticalChanceBase",
+            "value": 0.05299999900807024,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1206": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 6
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1209": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.03199999938791992,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.04799999873263392,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 6
+        },
+        {
+            "key": "IceAddedRatio",
+            "value": 0.06399999877583984,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "1211": [
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 2
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 5
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "StatusResistanceBase",
+            "value": 0.059999999114284316,
+            "stage": 6
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0999999985238072,
+            "level": 75
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "8001": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 6
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "8002": [
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "level": 1
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 3
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 4
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 6
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 80
+        }
+    ],
+    "8003": [
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "level": 1
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 3
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 4
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 5
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 6
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0999999985238072,
+            "level": 80
+        }
+    ],
+    "8004": [
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "level": 1
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 2
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0499999992619036,
+            "stage": 3
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.03999999940952288,
+            "stage": 3
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 4
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 5
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.07499999854360943,
+            "stage": 5
+        },
+        {
+            "key": "HPAddedRatio",
+            "value": 0.059999999114284316,
+            "stage": 6
+        },
+        {
+            "key": "AttackAddedRatio",
+            "value": 0.07999999881904576,
+            "level": 75
+        },
+        {
+            "key": "DefenceAddedRatio",
+            "value": 0.0999999985238072,
+            "level": 80
+        }
+    ]
+}
