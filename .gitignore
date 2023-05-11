@@ -1,2 +1,3 @@
 output/
 examples/temp/
+**/__pycache__
