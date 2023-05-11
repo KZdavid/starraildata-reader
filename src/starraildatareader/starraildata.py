@@ -58,7 +58,7 @@ class StarRailData:
     def getAvatarSkillList(self, avatarNameOrKey, levels=[6,10,10,10], selectKeys=None):
         # 参数检查
         if isinstance(avatarNameOrKey, int):
-            avatarKey = str(avatarKey) # 转换为字符串
+            avatarKey = str(avatarNameOrKey) # 转换为字符串
         if isinstance(avatarNameOrKey, str):
             avatarKey = next((k for k, v in self.avatarConfig.items() if str(v['AvatarName']['Hash']) in self.textMap and self.textMap[str(v['AvatarName']['Hash'])] == avatarNameOrKey), None)
         if not isinstance(levels, list):
@@ -125,7 +125,7 @@ class StarRailData:
     def getAvatarRankList(self, avatarNameOrKey):
         # 参数检查
         if isinstance(avatarNameOrKey, int):
-            avatarKey = str(avatarKey)
+            avatarKey = str(avatarNameOrKey)
         if isinstance(avatarNameOrKey, str):
             avatarKey = next((k for k, v in self.avatarConfig.items() if str(v['AvatarName']['Hash']) in self.textMap and self.textMap[str(v['AvatarName']['Hash'])] == avatarNameOrKey), None)
         # 读取角色星魂列表
