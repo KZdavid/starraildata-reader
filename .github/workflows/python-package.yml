@@ -38,4 +38,4 @@ jobs:
     - name: Test with pytest
       run: |
         git clone https://github.com/Dimbreath/StarRailData
-        pytest test/test_AvatarSkill.py
+        pytest test/test_getAvatarInfo.py
