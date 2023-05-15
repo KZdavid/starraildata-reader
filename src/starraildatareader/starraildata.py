@@ -4,6 +4,61 @@ import re
 import warnings
 
 
+class utils:
+    @staticmethod
+    def replace_func(m, params):
+        return (
+            str(round(float(params[int(m.group(1)) - 1]) * 100)) + "%"
+            if m.group(2) == "%"
+            else str(round(params[int(m.group(1)) - 1]))
+        )
+
+    # 替换含参数的字段，删除html标签
+    @staticmethod
+    def processDesc(desc, params):
+        if isinstance(params, list) and len(params)>0 and isinstance(params[0], dict) and "Value" in params[0]:
+            params = [param["Value"] for param in params]
+        pDesc = desc
+        # 替换参数
+        pDesc = re.sub(
+            r"#(\d+)\[i\](%?)",
+            lambda m: utils.replace_func(m, params),
+            pDesc,
+        )
+        # 删除html标签
+        pDesc = re.sub(r"<[^>]+>", "", pDesc)
+        return pDesc
+    
+    # 获取静态Hash
+    @staticmethod
+    def get_stable_hash(string: str) -> int:
+        hash1 = 5381
+        hash2 = hash1
+
+        for i in range(0, len(string), 2):
+            hash1 = ((hash1 << 5) + hash1) & 0xFFFFFFFF ^ ord(string[i])
+            if i == len(string) - 1:
+                break
+            hash2 = ((hash2 << 5) + hash2) & 0xFFFFFFFF ^ ord(string[i + 1])
+
+        result = (hash1 + (hash2 * 1566083941)) & 0xFFFFFFFF
+        return result if result <= 0x7FFFFFFF else result - 0x100000000
+    
+    # 替换所有的Value字典为对应的数值
+    @staticmethod
+    def replaceValueDict(valueDict):
+        if isinstance(valueDict, dict):
+            if "Value" in valueDict:
+                return valueDict["Value"]
+            else:
+                return {
+                    k: utils.replaceValueDict(v) for k, v in valueDict.items()
+                }
+        elif isinstance(valueDict, list):
+            return [utils.replaceValueDict(v) for v in valueDict]
+        else:
+            return valueDict
+
 class StarRailData:
     def __init__(self, language="CN"):
         self.language = language
@@ -43,27 +98,6 @@ class StarRailData:
             self.extraEffectConfig = json.load(f)
         with open(pathTextMap, "r", encoding="utf-8") as f:
             self.textMap = json.load(f)
-
-    def replace_func(m, params):
-        return (
-            str(round(float(params[int(m.group(1)) - 1]) * 100)) + "%"
-            if m.group(2) == "%"
-            else str(round(params[int(m.group(1)) - 1]))
-        )
-
-    # 替换所有的Value字典为对应的数值
-    def replaceValueDict(valueDict):
-        if isinstance(valueDict, dict):
-            if "Value" in valueDict:
-                return valueDict["Value"]
-            else:
-                return {
-                    k: StarRailData.replaceValueDict(v) for k, v in valueDict.items()
-                }
-        elif isinstance(valueDict, list):
-            return [StarRailData.replaceValueDict(v) for v in valueDict]
-        else:
-            return valueDict
 
     # 读取技能列表
     def getAvatarSkillList(
@@ -116,15 +150,12 @@ class StarRailData:
             "Maze": 1,
         }
         for skillID in self.avatarConfig[avatarKey]["SkillList"]:
-            # 读取技能配置
-            rawSkillConfig = self.avatarSkillConfig[str(skillID)]
-            # 读取技能等级
-            attack_type = rawSkillConfig.get("1", {}).get("AttackType")
+            rawSkillConfig = self.avatarSkillConfig[str(skillID)]  # 读取技能配置
+            attack_type = rawSkillConfig.get("1", {}).get("AttackType")  # 读取技能等级
             if attack_type == "MazeNormal":
                 continue  # 不读取箱庭普攻
             level = levelDict.get(attack_type, levels[3])  # 读取对应等级
-            # 选取需要的字段
-            rawSkillConfig = rawSkillConfig[str(level)]
+            rawSkillConfig = rawSkillConfig[str(level)]  # 选取需要的字段
             skillConfig = {
                 k: rawSkillConfig[k]
                 for k in selectKeys.intersection(rawSkillConfig.keys())
@@ -133,28 +164,16 @@ class StarRailData:
                 k: skillConfig[k] for k in selectKeys if k in skillConfig.keys()
             }
             # 处理字段
-            params = [param["Value"] for param in rawSkillConfig["ParamList"]]
             for key, value in skillConfig.items():
                 if isinstance(value, dict) and "Hash" in value:
                     if str(value["Hash"]) in self.textMap:
                         skillConfig[key] = self.textMap[str(value["Hash"])]
                         if key == "SkillDesc" or key == "SimpleSkillDesc":
-                            skillConfig[key] = re.sub(
-                                r"#(\d+)\[i\](%?)",
-                                lambda m: StarRailData.replace_func(m, params),
-                                skillConfig[key],
-                            )
-                            # 删除html标签
-                            skillConfig[key] = re.sub(r"<[^>]+>", "", skillConfig[key])
+                            skillConfig[key] = utils.processDesc(skillConfig[key], rawSkillConfig["ParamList"])
                     else:  # 替换为空值
                         skillConfig[key] = ""
-            skillConfig = StarRailData.replaceValueDict(skillConfig)
-            # 删除空值
-            skillConfig = {k: v for k, v in skillConfig.items() if v != ""}
-            # 按照selectKeys排序
-            skillConfig = {
-                k: skillConfig[k] for k in selectKeys if k in skillConfig.keys()
-            }
+            skillConfig = utils.replaceValueDict(skillConfig) 
+            skillConfig = {k: v for k, v in skillConfig.items() if v != ""} # 删除空值
             skillList.append(skillConfig)
 
         return skillList
