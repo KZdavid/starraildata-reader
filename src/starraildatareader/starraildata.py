@@ -188,9 +188,9 @@ class StarRailData:
             if property_name not in GROWTH_PROPERTY:
                 property_value = promotion_config[property_name]['Value']
             else:
-                property_base_name = ''.join(property_name, 'Base')
+                property_base_name = ''.join([property_name, 'Base'])
                 property_base_value = promotion_config[property_base_name]['Value']
-                property_add_name = ''.join(property_name, 'Add')
+                property_add_name = ''.join([property_name, 'Add'])
                 property_add_value = promotion_config[property_add_name]['Value']
 
                 property_value = property_base_value + property_add_value * (level - 1)
@@ -207,7 +207,7 @@ class StarRailData:
             avatar_id_str = str(avatar_name_or_key)  # 转换为字符串
         if isinstance(avatar_name_or_key, str):
             # 封装成函数
-            avatar_id_str = self.get_avatar_id_from_avatar_name(avatar_name_or_key)
+            avatar_id_str = self.get_avatar_id_from_avatar_name(self, avatar_name_or_key)
 
         if not isinstance(level, int):
             warnings.warn("level must be a int, using default value 80")
@@ -238,7 +238,7 @@ class StarRailData:
             ]
 
         # 因为avatar_config数据都是用角色id作key，所以为了功能分离，将读取接口与实际读取模块进行分离。
-        avatar_stat_list = self.get_avatar_stat_list(avatar_id_str, level, promotion, select_keys)
+        avatar_stat_list = self.get_avatar_stat_list(self, avatar_id_str, level, promotion, select_keys)
 
         return avatar_stat_list
     
@@ -290,7 +290,7 @@ class StarRailData:
         if isinstance(avatar_name_or_key, int):
             avatar_id_str = str(avatar_name_or_key)  # 转换为字符串
         if isinstance(avatar_name_or_key, str):
-            avatar_id_str = self.get_avatar_id_from_avatar_name(avatar_name_or_key)
+            avatar_id_str = self.get_avatar_id_from_avatar_name(self, avatar_name_or_key)
 
         if not isinstance(levels, list):
             warnings.warn("level must be a list, using default value [6,10,10,10]")
@@ -319,7 +319,7 @@ class StarRailData:
                 "SPBase",
             }
 
-        avatar_skill_list = self.get_avatar_skill_list(avatar_id_str, levels, select_keys)
+        avatar_skill_list = self.get_avatar_skill_list(self, avatar_id_str, levels, select_keys)
 
         return avatar_skill_list
     
@@ -350,7 +350,7 @@ class StarRailData:
         if isinstance(avatar_name_or_key, int):
             avatar_id_str = str(avatar_name_or_key)
         if isinstance(avatar_name_or_key, str):
-            avatar_id_str = self.get_avatar_id_from_avatar_name(avatar_name_or_key)
+            avatar_id_str = self.get_avatar_id_from_avatar_name(self, avatar_name_or_key)
 
         if select_keys is None:
             # select_keys = {"RankID", "Rank", "Name", "Desc", "SkillAddLevelList"}
@@ -360,7 +360,7 @@ class StarRailData:
                 "Desc"
             }
 
-        avatar_rank_list = self.get_avatar_rank_list(avatar_id_str, select_keys)
+        avatar_rank_list = self.get_avatar_rank_list(self, avatar_id_str, select_keys)
 
         return avatar_rank_list
         
