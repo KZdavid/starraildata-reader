@@ -16,7 +16,12 @@ class utils:
     # 替换含参数的字段，删除html标签
     @staticmethod
     def processDesc(desc, params):
-        if isinstance(params, list) and len(params)>0 and isinstance(params[0], dict) and "Value" in params[0]:
+        if (
+            isinstance(params, list)
+            and len(params) > 0
+            and isinstance(params[0], dict)
+            and "Value" in params[0]
+        ):
             params = [param["Value"] for param in params]
         pDesc = desc
         # 替换参数
@@ -28,7 +33,7 @@ class utils:
         # 删除html标签
         pDesc = re.sub(r"<[^>]+>", "", pDesc)
         return pDesc
-    
+
     # 获取静态Hash
     @staticmethod
     def get_stable_hash(string: str) -> int:
@@ -43,7 +48,7 @@ class utils:
 
         result = (hash1 + (hash2 * 1566083941)) & 0xFFFFFFFF
         return result if result <= 0x7FFFFFFF else result - 0x100000000
-    
+
     # 替换所有的Value字典为对应的数值
     @staticmethod
     def replaceValueDict(valueDict):
@@ -51,13 +56,12 @@ class utils:
             if "Value" in valueDict:
                 return valueDict["Value"]
             else:
-                return {
-                    k: utils.replaceValueDict(v) for k, v in valueDict.items()
-                }
+                return {k: utils.replaceValueDict(v) for k, v in valueDict.items()}
         elif isinstance(valueDict, list):
             return [utils.replaceValueDict(v) for v in valueDict]
         else:
             return valueDict
+
 
 class StarRailData:
     def __init__(self, language="CN"):
@@ -169,11 +173,13 @@ class StarRailData:
                     if str(value["Hash"]) in self.textMap:
                         skillConfig[key] = self.textMap[str(value["Hash"])]
                         if key == "SkillDesc" or key == "SimpleSkillDesc":
-                            skillConfig[key] = utils.processDesc(skillConfig[key], rawSkillConfig["ParamList"])
+                            skillConfig[key] = utils.processDesc(
+                                skillConfig[key], rawSkillConfig["ParamList"]
+                            )
                     else:  # 替换为空值
                         skillConfig[key] = ""
-            skillConfig = utils.replaceValueDict(skillConfig) 
-            skillConfig = {k: v for k, v in skillConfig.items() if v != ""} # 删除空值
+            skillConfig = utils.replaceValueDict(skillConfig)
+            skillConfig = {k: v for k, v in skillConfig.items() if v != ""}  # 删除空值
             skillList.append(skillConfig)
 
         return skillList
@@ -186,7 +192,7 @@ class StarRailData:
         }
 
     # 读取角色星魂(Rank)列表
-    def getAvatarRankList(self, avatarNameOrKey):
+    def getAvatarRankList(self, avatarNameOrKey, selectKeys=None):
         # 参数检查
         if isinstance(avatarNameOrKey, int):
             avatarKey = str(avatarNameOrKey)
@@ -200,7 +206,23 @@ class StarRailData:
                 ),
                 None,
             )
+        if selectKeys is None:
+            # selectKeys = {"RankID", "Rank", "Name", "Desc", "SkillAddLevelList"}
+            selectKeys = {"Rank", "Name", "Desc"}
         # 读取角色星魂列表
         rankList = []
-        for rankID in self.avatarConfig[avatarKey]["RankList"]:
-            pass
+        for rankID in self.avatarConfig[avatarKey]["RankIDList"]:
+            rawRankConfig = self.avatarRankConfig[str(rankID)]  # 读取星魂配置
+            rankConfig = {
+                k: rawRankConfig[k]
+                for k in selectKeys.intersection(rawRankConfig.keys())
+            }
+            rankConfig["Name"] = self.textMap[
+                str(utils.get_stable_hash(rankConfig["Name"]))
+            ]
+            rankConfig["Desc"] = utils.processDesc(
+                self.textMap[str(utils.get_stable_hash(rankConfig["Desc"]))],
+                rawRankConfig["Param"],
+            )
+            rankList.append(rankConfig)
+        return rankList

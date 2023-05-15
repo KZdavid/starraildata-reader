@@ -60,13 +60,21 @@ def test_getAvatarSkillListByName():
     assert AvatarSkill[0]["SkillTag"] == "单攻"
 
 
-def test_getAvatarSkillListByName():
+def test_getAvatarSkillListByID():
     avatarNameOrKey = 1001
     AvatarSkill = starRailData.getAvatarSkillList(
         avatarNameOrKey, levels=[6, 10, 10, 10], selectKeys=selectKeys
     )
     assert len(AvatarSkill) > 0
     assert AvatarSkill[0]["SkillTag"] == "单攻"
+    
+def test_getAvatarRankList():
+    avatarNameOrKey = "三月七"
+    AvatarRank = starRailData.getAvatarRankList(avatarNameOrKey)
+    assert len(AvatarRank) > 0
+    assert AvatarRank[0]["Name"] == "记忆中的你"
+    assert AvatarRank[0]["Rank"] == 1
+    assert AvatarRank[0]["Desc"] == "终结技每冻结1个目标，为三月七恢复6点能量。"
 
 
 if __name__ == "__main__":
