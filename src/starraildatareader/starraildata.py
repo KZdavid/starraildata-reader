@@ -64,6 +64,48 @@ class utils:
             return [utils.replace_value_dict(v) for v in value_dict]
         else:
             return value_dict
+        
+    @staticmethod
+    def is_valid_promotion(level, promotion):
+        flag = False
+
+        if promotion == 0 and level >= 0 and level <= 20:
+            flag = True
+        elif promotion == 1 and level >= 20 and level <= 30:
+            flag = True
+        elif promotion == 2 and level >= 30 and level <= 40:
+            flag = True
+        elif promotion == 3 and level >= 40 and level <= 50:
+            flag = True
+        elif promotion == 4 and level >= 50 and level <= 80:
+            flag = True
+        elif promotion == 5 and level >= 60 and level <= 70:
+            flag = True
+        elif promotion == 6 and level >= 70 and level <= 80:
+            flag = True
+
+        return flag
+    
+    @staticmethod
+    def get_valid_promotion(level, promotion):
+        promotion == 6
+        
+        if level >= 0 and level <= 20:
+            promotion == 0
+        elif level > 20 and level <= 30:
+            promotion == 1
+        elif level > 30 and level <= 40:
+            promotion == 2
+        elif level > 40 and level <= 50:
+            promotion == 3
+        elif level > 50 and level <= 80:
+            promotion == 4
+        elif level > 60 and level <= 70:
+            promotion == 5
+        elif level > 70 and level <= 80:
+            promotion == 6
+
+        return promotion
 
 
 class StarRailData:
@@ -131,47 +173,6 @@ class StarRailData:
             for k in self.avatar_config.keys()
         }
     
-    def is_valid_promotion(level, promotion):
-        flag = False
-
-        if promotion == 0 and level >= 0 and level <= 20:
-            flag = True
-        elif promotion == 1 and level >= 20 and level <= 30:
-            flag = True
-        elif promotion == 2 and level >= 30 and level <= 40:
-            flag = True
-        elif promotion == 3 and level >= 40 and level <= 50:
-            flag = True
-        elif promotion == 4 and level >= 50 and level <= 80:
-            flag = True
-        elif promotion == 5 and level >= 60 and level <= 70:
-            flag = True
-        elif promotion == 6 and level >= 70 and level <= 80:
-            flag = True
-
-        return flag
-    
-    
-    def get_valid_promotion(level, promotion):
-        promotion == 6
-        
-        if level >= 0 and level <= 20:
-            promotion == 0
-        elif level > 20 and level <= 30:
-            promotion == 1
-        elif level > 30 and level <= 40:
-            promotion == 2
-        elif level > 40 and level <= 50:
-            promotion == 3
-        elif level > 50 and level <= 80:
-            promotion == 4
-        elif level > 60 and level <= 70:
-            promotion == 5
-        elif level > 70 and level <= 80:
-            promotion == 6
-
-        return promotion
-    
 
     def get_avatar_stat_list(self, avatar_id_str, level, promotion, select_keys):
         GROWTH_PROPERTY = [
@@ -206,7 +207,7 @@ class StarRailData:
             avatar_id_str = str(avatar_name_or_key)  # 转换为字符串
         if isinstance(avatar_name_or_key, str):
             # 封装成函数
-            avatar_id_str = StarRailData.get_avatar_id_from_avatar_name(avatar_name_or_key)
+            avatar_id_str = self.get_avatar_id_from_avatar_name(avatar_name_or_key)
 
         if not isinstance(level, int):
             warnings.warn("level must be a int, using default value 80")
@@ -221,9 +222,9 @@ class StarRailData:
         elif promotion < 0 or promotion > 6:
             warnings.warn("Invalid value for promotion, using default value 6")
             promotion = 6  # 值不在范围内，使用默认值
-        elif not StarRailData.is_valid_promotion(level, promotion):
+        elif not utils.is_valid_promotion(level, promotion):
             warnings.warn("Promotion doesn't match level, using corresponding promotion")
-            promotion = StarRailData.get_valid_promotion(level, promotion)  # 值不在范围内，使用默认值
+            promotion = utils.get_valid_promotion(level, promotion)  # 值不在范围内，使用默认值
 
         if select_keys is None:
             select_keys = [
@@ -237,7 +238,7 @@ class StarRailData:
             ]
 
         # 因为avatar_config数据都是用角色id作key，所以为了功能分离，将读取接口与实际读取模块进行分离。
-        avatar_stat_list = StarRailData.get_avatar_stat_list(avatar_id_str, level, promotion, select_keys)
+        avatar_stat_list = self.get_avatar_stat_list(avatar_id_str, level, promotion, select_keys)
 
         return avatar_stat_list
     
@@ -289,7 +290,7 @@ class StarRailData:
         if isinstance(avatar_name_or_key, int):
             avatar_id_str = str(avatar_name_or_key)  # 转换为字符串
         if isinstance(avatar_name_or_key, str):
-            avatar_id_str = StarRailData.get_avatar_id_from_avatar_name(avatar_name_or_key)
+            avatar_id_str = self.get_avatar_id_from_avatar_name(avatar_name_or_key)
 
         if not isinstance(levels, list):
             warnings.warn("level must be a list, using default value [6,10,10,10]")
@@ -318,7 +319,7 @@ class StarRailData:
                 "SPBase",
             }
 
-        avatar_skill_list = StarRailData.get_avatar_skill_list(avatar_id_str, levels, select_keys)
+        avatar_skill_list = self.get_avatar_skill_list(avatar_id_str, levels, select_keys)
 
         return avatar_skill_list
     
@@ -349,7 +350,7 @@ class StarRailData:
         if isinstance(avatar_name_or_key, int):
             avatar_id_str = str(avatar_name_or_key)
         if isinstance(avatar_name_or_key, str):
-            avatar_id_str = StarRailData.get_avatar_id_from_avatar_name(avatar_name_or_key)
+            avatar_id_str = self.get_avatar_id_from_avatar_name(avatar_name_or_key)
 
         if select_keys is None:
             # select_keys = {"RankID", "Rank", "Name", "Desc", "SkillAddLevelList"}
@@ -359,7 +360,7 @@ class StarRailData:
                 "Desc"
             }
 
-        avatar_rank_list = StarRailData.get_avatar_rank_list(avatar_id_str, select_keys)
+        avatar_rank_list = self.get_avatar_rank_list(avatar_id_str, select_keys)
 
         return avatar_rank_list
         

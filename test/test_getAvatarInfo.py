@@ -53,8 +53,8 @@ starRailData = create_star_rail_data(path_to_StarRailData)
 
 def test_getAvatarSkillListByName():
     avatarNameOrKey = "三月七"
-    AvatarSkill = starRailData.getAvatarSkillList(
-        avatarNameOrKey, levels=[6, 10, 10, 10], selectKeys=selectKeys
+    AvatarSkill = starRailData.generate_avatar_skill_list(
+        avatarNameOrKey, levels=[6, 10, 10, 10], select_keys=selectKeys
     )
     assert len(AvatarSkill) > 0
     assert AvatarSkill[0]["SkillTag"] == "单攻"
@@ -62,15 +62,15 @@ def test_getAvatarSkillListByName():
 
 def test_getAvatarSkillListByID():
     avatarNameOrKey = 1001
-    AvatarSkill = starRailData.getAvatarSkillList(
-        avatarNameOrKey, levels=[6, 10, 10, 10], selectKeys=selectKeys
+    AvatarSkill = starRailData.generate_avatar_skill_list(
+        avatarNameOrKey, levels=[6, 10, 10, 10], select_keys=selectKeys
     )
     assert len(AvatarSkill) > 0
     assert AvatarSkill[0]["SkillTag"] == "单攻"
     
 def test_getAvatarRankList():
     avatarNameOrKey = "三月七"
-    AvatarRank = starRailData.getAvatarRankList(avatarNameOrKey)
+    AvatarRank = starRailData.generate_avatar_rank_list(avatarNameOrKey)
     assert len(AvatarRank) > 0
     assert AvatarRank[0]["Name"] == "记忆中的你"
     assert AvatarRank[0]["Rank"] == 1
